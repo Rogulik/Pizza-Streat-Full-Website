@@ -1,10 +1,13 @@
 import React from 'react'
 import '../styles/Footer.scss'
 import logo2 from '../img/adjusted-logo.png'
+import Div100vh from 'react-div-100vh'
 
 const Footer = () => {
   return (
-    <footer className='footer__container' >
+      
+    
+        <Div100vh style={{height:'60vrh'}} className='footer__container'>
         <div className='footer__sites'>
             <h3>PIZZA STREAT</h3>
                 <ul className='footer__list'>
@@ -26,8 +29,8 @@ const Footer = () => {
             <i className ="fab fa-tripadvisor"></i>
         </div>
         
-        
-    </footer>
+        </Div100vh>
+    
   )
 }
 

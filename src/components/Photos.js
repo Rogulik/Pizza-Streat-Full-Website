@@ -3,11 +3,12 @@ import chef from '../img/chef.svg'
 import pizza from '../img/pizza.svg'
 import smile from '../img/smile.svg'
 import '../styles/Photos.scss'
+import Div100vh from 'react-div-100vh'
 
 const Photos = () => {
   
   return (
-    <div className='photos__container'>
+      <Div100vh className='photos__container' style={{minHeight:'100rvh'}}>
     <div className='photos__box photo-4'>
         <img src={chef} alt='chef' className='chef svg'/>
     </div>
@@ -27,8 +28,7 @@ const Photos = () => {
     <div className='photos__box image-3 darken-pseudo'>
       <Header title='Affordable' />
     </div>
-       
-    </div>
+    </Div100vh>
   )
 }
 

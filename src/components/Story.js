@@ -2,10 +2,12 @@ import React from 'react'
 import Origin from './Origin'
 import image from '../img/story-2.jpg'
 import '../styles/Story.scss'
+import Div100vh from 'react-div-100vh'
 
 export default function Story() {
   return (
-    <section className='Story' id='story'>
+    
+          <Div100vh className='Story' id='story'>
         <div className='Story__head-container'> 
             <h2 className='Story__head-conianer--header'>
                 Every story has the begining...
@@ -34,6 +36,6 @@ export default function Story() {
         </div>
         
         <Origin />
-    </section>
+        </Div100vh>
   )
 }
