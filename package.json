@@ -2,7 +2,7 @@
   "name": "pizza-streat",
   "version": "0.1.0",
   "engines": {
-    "node": "10.12.2"
+    "node": "6.11.1"
   },
   "private": true,
   "dependencies": {
