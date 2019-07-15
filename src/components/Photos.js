@@ -7,10 +7,11 @@ import '../styles/Photos.scss'
 const Photos = () => {
   
   return (
+    <div className='photos__container'>
     <div className='photos__box photo-4'>
         <img src={chef} alt='chef' className='chef svg'/>
-      </div>
-    <div className='photos__container'>
+    </div>
+    
       <div className='photos__box image-1 darken-pseudo'>
         <Header title='Fresh' />
     </div>
@@ -26,9 +27,7 @@ const Photos = () => {
     <div className='photos__box image-3 darken-pseudo'>
       <Header title='Affordable' />
     </div>
-      
-      
-      
+       
     </div>
   )
 }
