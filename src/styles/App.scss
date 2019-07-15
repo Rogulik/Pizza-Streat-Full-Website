@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.App{
+    display: grid;
+    grid-template-rows: repeat(2,100vh) repeat(3,min-content) 100vh min-content 50vh ;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem)[col-end]) [center-end] 1fr [full-end];
+    grid-row-gap: 3rem;
+    @media only screen and (max-width: $bp-tab-ls){
+      grid-template-rows: repeat(2,100vh) repeat(5,min-content) 50vh ;
+      grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem)[col-end]) [center-end] 1fr [full-end];
+  }
+  @media only screen and (max-width: $bp-phone-lr){
+    grid-template-rows: 100vh repeat(6,min-content) 60vh ;
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 12rem)[col-end]) [center-end] 1fr [full-end];
+  }
+}
+

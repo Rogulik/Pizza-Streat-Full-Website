@@ -1,0 +1,104 @@
+@import './variables.scss';
+
+.navigation{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+    transition: .2s;
+    
+    @media only screen and (max-width: $bp-phone-lr){
+        display: none;
+        visibility: hidden;
+    }
+    //background-color: rgba(200, 255, 0, 0.8);
+    //border: 1px solid rgba(200, 255, 0, 0.8);
+    &__moved{
+        background-color: rgba(255, 255, 255, 0.932);
+        animation: scrollZoom .5s ease-in;
+        z-index: 99;
+        & li{
+            color: #000;
+        }
+    }
+    &__list{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        
+
+    }
+    &__item{
+        opacity: .6;
+        color: #fff;
+        font-weight: 300;
+        list-style: none;
+        font-size: $s-size;
+        padding: 0rem 2rem;
+        //margin: 0 .5rem;
+        cursor: pointer;
+        transition: .5s;
+        animation:  
+        hiddenn 3s,
+        moveFromTop 3s 2.2s;
+        text-transform: uppercase;
+        
+        &:hover{
+            opacity: 1;
+        }
+        &:hover .mini{
+            opacity: 1;
+            transition: 1s;
+        }
+    }
+}
+.logo{
+    width: 11%;
+    animation: moveFromRight 2s ease-in-out;
+    position: fixed;
+    top: 0;
+ }
+
+.mini{
+    opacity: 0;
+    margin-left: .3rem;
+    font-size: 1.3rem;
+    transform: rotate(45deg);
+}
+
+
+@keyframes moveFromTop {
+    0%{
+        transform: translateY(-5rem);
+    }
+
+
+    100%{
+        opacity: .6;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes hiddenn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes scrollZoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

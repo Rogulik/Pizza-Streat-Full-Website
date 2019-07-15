@@ -1,0 +1,84 @@
+@import './variables.scss';
+
+
+.footer{
+    &__container{
+        grid-column: full-start/full-end;
+        background-color: $dark-blue;
+        color: #ffffff;
+        display: flex;
+        padding: 2rem;
+        justify-content: space-between;
+        @media only screen and (max-width: $bp-phone-lr){
+            flex-direction: column;
+            align-items: center;
+         }
+    }
+    &__sites{
+        margin-right: 2rem;
+        h3{
+            @media only screen and (max-width: $bp-phone-lr){
+                font-size: 2.4rem;
+             }
+        }
+    }
+    &__list{
+        list-style: none;
+        font-size: 1.6rem;
+        @media only screen and (max-width: $bp-phone-lr){
+           font-size: 2rem;
+           text-align: center;
+         }
+    }
+    &__item{
+
+    }
+    &__pizza-streat{
+        width: 40rem;
+        align-self: flex-end;
+        text-align: center;
+        @media only screen and (max-width: $bp-phone-lr){
+            align-self: center;
+            padding: 2rem;
+        }
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.small-logo{
+    width: 13rem;
+    
+}
+
+.social__container{
+    width: 20rem;
+    @media only screen and (max-width: $bp-phone-lr){
+        width: 25rem;
+        text-align: center;
+     }
+
+ & i {
+    
+    margin-top: 2rem;
+    font-size: 4rem;
+    &:not(:last-child){
+        margin-right: 2rem;
+    }
+ }
+}
+.fab{
+
+}
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.fa-tripadvisor:hover{
+    color: #00af87;
+}
+
+.fa-instagram:hover{
+    color: #e4405f;
+}
