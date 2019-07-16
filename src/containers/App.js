@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
 import Story from '../components/Story'
 import Header from '../components/Header'
 import Gallery from '../components/Gallery'
@@ -11,12 +11,10 @@ import PhoneNav from '../components/Phone-nav'
 import '../styles/App.scss';
 
 
-class App extends Component {
+
+const App = ({hideLoader}) => {
   
-  render() {
-    window.addEventListener('scroll', ()=>{
-      console.log(window.scrollY)
-    })
+  useEffect(()=> hideLoader(),[])
     return (
       <div className="App">
         <Header />
@@ -31,6 +29,6 @@ class App extends Component {
       </div>
     );
   }
-}
+
 
 export default App;

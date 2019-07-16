@@ -7,7 +7,7 @@ import Div100vh from 'react-div-100vh'
 export default function Story() {
   return (
     
-          <Div100vh className='Story' id='story'>
+          <Div100vh className='Story' id='story' style={{minHeight:'100%'}}>
         <div className='Story__head-container'> 
             <h2 className='Story__head-conianer--header'>
                 Every story has the begining...

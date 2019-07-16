@@ -8,8 +8,11 @@
     background-attachment: fixed;
     grid-column: full-start/full-end;
     z-index: 1;
+    @media only screen and (max-width: $bp-phone-lr){
+        background: linear-gradient(to right, #f07a3f98,#f07a3f98), url('./img/hero-min.jpg') no-repeat center center/cover;
+     }
     &__logo{
-        width: 20rem;
+        width: 30rem;
         margin-bottom: 5rem;
         opacity: 0;
         @media only screen and (max-width: $bp-phone-lr){
@@ -29,7 +32,7 @@
       }
     &__logo-box{
         position: absolute;
-        top: 65%;
+        top: 50%;
         left: 30%;
         z-index: 1;
         //text-align: center;
