@@ -12,7 +12,7 @@ Used technologies:
 
 Project is still in process of developing and improving. Mostly I still willing to improve the RWD. Also in the near future I am planning to wire up contact form using AWS Lambda function. Next, I will add more sections when I will get soon more information from my client.
 
-
+Please visit the website on http://pizzastreat.com.ph/locations
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
