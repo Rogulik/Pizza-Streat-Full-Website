@@ -1,0 +1,93 @@
+@import '../../generalComponents/styles/variables.scss';
+
+.Story{
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(50%,1fr));
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media only screen and (max-width: $bp-phone-lr){
+       grid-template-rows: repeat(2,min-content);
+     }
+
+    &__head-container{
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 2rem;
+        &--header{
+           
+        }
+    }
+    &__image-container{
+        
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        @media only screen and (max-width: $bp-phone-lr){
+            display: none;
+            visibility: hidden;
+          }
+        
+    }
+    &__image-photo{
+       width:40rem; 
+       border-top-right-radius: 10%;
+    }
+    &__content{
+        grid-row: 2 / 4;
+        height: 100%;
+        background-color: $orange;
+        @media only screen and (max-width: $bp-phone-lr){
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+            width: 100%;
+          }
+        &--text{
+            font-size: 1.6rem;
+            padding: 4rem;
+            line-height: 3rem;
+            text-align: right;
+            color: white;
+            @media only screen and (max-width: $bp-phone-lr){
+               text-align: center;
+              }
+            
+        }
+        .text1{
+
+        }
+    }
+}
+
+.origin{
+    margin-top: -7rem;
+    display: flex;
+    grid-column: 1 / -1;
+    justify-self: center;
+    @media only screen and (max-width: $bp-phone-lr){
+        margin-top: -3rem;
+      }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image{
+        font-size: 3rem;
+        padding: 3rem;
+        background-color: $dark-blue;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 3rem 6rem rgba(#000, .3);
+        
+    }
+    &__header--container{
+        padding: 2rem;
+        width: 70%;
+        .origin__header--title {
+            text-align: center;
+        }
+    }
+}

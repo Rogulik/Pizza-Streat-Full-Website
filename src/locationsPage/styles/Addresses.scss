@@ -1,0 +1,55 @@
+@import '../../generalComponents/styles/variables.scss';
+
+.Addresses{
+    &__container{
+        display: flex;
+        flex-direction: column;
+        min-height: 40rem;
+        padding: 6rem;
+        background: url('../img/email-pattern.png') no-repeat center/cover;
+    }
+    &__header{
+        text-align: center;
+        display: block;
+        margin-bottom: 4rem;
+    }
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(35rem, 40rem));
+        grid-gap: 2rem;
+        width: 100%;
+        justify-content: center;
+        &--square{
+            width: 40rem;
+            padding: 2rem;
+            background-color: $orange;
+            color: #fff;
+            box-shadow: 0 8px 8px $orange;
+            .position{
+                display: flex;
+                align-items: center;
+                &:first-child{
+                    margin-bottom: 2rem;
+                    .fas{
+                        margin-top: -2rem;
+                    }
+                }
+            }
+            .fas{
+                margin-right: 1.5rem;
+                align-self: space-evenly;
+                
+            }
+
+        }
+        &--name{
+            font-weight: bold;
+        }
+        &--phone-number{
+        }
+    }
+}
+
+.border-bottom{
+    border-bottom: 1px solid #fff;
+}

@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+.navigation{
+    width: 100%;
+    height: 6rem;
+    position: fixed;
+    z-index: 99;
+    background-color: transparent;
+    transition: .2s;
+    
+    @media only screen and (max-width: $bp-phone-lr){
+        display: none;
+        visibility: hidden;
+    }
+    
+    &__moved{
+        background-color: rgba(255, 255, 255, 0.932);
+        animation: scrollZoom .5s ease-in;
+        z-index: 99;
+        & li{
+            color: #000;
+        }
+        .navigation__link{
+            color: #000;
+            &:hover{
+                opacity: 1;
+                color: #000;
+            }
+        }
+        .isActive{
+            color: $light-yellow;
+            opacity: 1;
+        }
+    }
+    &__list{
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+}
+.logo{
+    width: 11%;
+    position: fixed;
+    top: 0;
+ }
+
+
+
+
+
+@keyframes scrollZoom {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

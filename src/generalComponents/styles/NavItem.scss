@@ -1,0 +1,52 @@
+@import './variables.scss';
+
+.navigation{
+    &__item{
+        color: #fff;
+        font-weight: 300;
+        list-style: none;
+        font-size: $s-size;
+        padding: 0rem 2rem;
+        //margin: 0 .5rem;
+        cursor: pointer;
+        transition: .5s;
+        animation:  
+        hiddenn 2s,
+        moveFromTop 1s 2s;
+        text-transform: uppercase;
+        
+        &:hover{
+            opacity: 1;
+            color: $light-yellow;
+        }
+        &:hover .mini{
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: #fff;
+        &:hover{
+            color: #fff;
+            
+        }
+        &:not(:last-child){
+            margin-right: .3rem;
+        }
+    }
+    .mini{
+        opacity: 0;
+        margin-left: .3rem;
+        font-size: 1.3rem;
+        transform: rotate(45deg);
+    }
+    
+}
+
+.isActive{
+    opacity: 1;
+    color: $light-yellow;
+}
