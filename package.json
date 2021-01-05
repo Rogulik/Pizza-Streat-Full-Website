@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "formik": "^1.5.8",
     "google-maps-react": "^2.0.2",
